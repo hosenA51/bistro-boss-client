@@ -24,17 +24,21 @@ const Menu = () => {
             <Cover img={menuImg} title="our menu"></Cover>
             {/* main cover */}
             <SectionTitle
-            subHeading="Don't Miss"
-            heading="today's offer"
+                subHeading="Don't Miss"
+                heading="today's offer"
             ></SectionTitle>
             {/* offered menu items */}
-            <MenuCategory items={offered}></MenuCategory>
+            <div className='max-w-screen-xl mx-auto'>
+                <MenuCategory items={offered}></MenuCategory>
+            </div>
             {/* dessert menu items */}
-            <MenuCategory items={dessert} title="Dessert" img={dessertImg}></MenuCategory>
+            <MenuCategory items={dessert} title="dessert" img={dessertImg}></MenuCategory>
             {/* pizza menu items */}
-            <MenuCategory items={pizza} title={"Pizza"} img={pizzaImg}></MenuCategory>
-            <MenuCategory items={salad} title={"Salad"} img={saladImg}></MenuCategory>
-            <MenuCategory items={soup} title={"Pizza"} img={soupImg}></MenuCategory>
+            <MenuCategory items={pizza} title={"pizza"} img={pizzaImg}></MenuCategory>
+            {/* salad menu items */}
+            <MenuCategory items={salad} title={"salad"} img={saladImg}></MenuCategory>
+            {/* soup menu items */}
+            <MenuCategory items={soup} title={"soup"} img={soupImg}></MenuCategory>
         </div>
     );
 };
