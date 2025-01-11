@@ -29,7 +29,7 @@ const Dashboard = () => {
                                 </NavLink>
                             </li>
                             <li>
-                                <NavLink to="/dashboard/mangeItems">
+                                <NavLink to="/dashboard/manageItems">
                                     <FaList></FaList>
                                    Manage Items
                                 </NavLink>
